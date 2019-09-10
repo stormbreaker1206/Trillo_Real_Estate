@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+   <style>
+      /*
+       .challenge{
+           width: 1000px;
+           margin: 30px auto;
+           display: grid;
+           grid-template-rows: 100px 200px 400px 100px;
+           grid-template-columns: repeat(3, 1fr) 200px;
+           grid-gap: 30px;
+       }
+       .header{
+           background-color: orangered;
+           padding: 20px;
+           font-size: 20px;
+           color: white;
+
+           grid-column: 1 / -1;
+       }
+
+       .small-box1{
+           background-color: orangered;
+           padding: 20px;
+           font-size: 20px;
+           color: white;
+       }
+
+       .main-content{
+           background-color: orangered;
+           padding: 20px;
+           font-size: 20px;
+           color: white;
+          grid-column: 1 / span 3;
+       }
+
+       .sidebar{
+           background-color: orangered;
+           padding: 20px;
+           font-size: 20px;
+           color: white;
+
+           grid-column: 4 / 5;
+           grid-row: 2 / span 2;
+       }
+        .footer{
+            background-color: orangered;
+            padding: 20px;
+            font-size: 20px;
+            color: white;
+             grid-column: 1 / -1;
+        } */
+
+      .challenge{
+          width: 1000px;
+          margin: 30px auto;
+          display: grid;
+          grid-template-rows: 100px 200px 400px 100px;
+          grid-template-columns: repeat(3, 1fr) 200px;
+          grid-gap: 30px;
+
+          grid-template-areas: "head head head head"
+                                "side box box box "
+                                "side main main main"
+                                "foot foot foot foot";
+      }
+      .header{
+          background-color: orangered;
+          padding: 20px;
+          font-size: 20px;
+          color: white;
+          grid-area: head;
+
+
+      }
+
+      .small-box1{
+          background-color: orangered;
+          padding: 20px;
+          font-size: 20px;
+          color: white;
+
+      }
+
+      .main-content{
+          background-color: orangered;
+          padding: 20px;
+          font-size: 20px;
+          color: white;
+          grid-area: main;
+
+      }
+
+      .sidebar{
+          background-color: orangered;
+          padding: 20px;
+          font-size: 20px;
+          color: white;
+          grid-area: side;
+
+
+      }
+      .footer{
+          background-color: orangered;
+          padding: 20px;
+          font-size: 20px;
+          color: white;
+          grid-area: foot;
+
+      }
+
+
+
+
+   </style>
+</head>
+<body>
+
+<div class="challenge">
+    <div class="header">header</div>
+    <div class="small-box1">Small box 1</div>
+    <div class="small-box1">Small box 1</div>
+    <div class="small-box1">Small box 3</div>
+
+    <div class="main-content">Main Content</div>
+    <div class="sidebar">side bar</div>
+    <div class="footer">footer</div>
+
+
+</div>
+
+
+</body>
+</html>
